@@ -2,19 +2,35 @@
 
 <?php include($root . "header.php"); ?>
 
+<div class="screen">
+    <div class="wrapper">
+        <div class="panel-overlay overlay-close"></div>
+        <div class="panel-close overlay-close">
+            <i class="ic ic-close"></i>
+        </div>
+        <div class="popup-image">
+            <img src="./assets/img/design/index-notice.jpg" alt="Index Notice" draggable="false">
+        </div>
+    </div>
+</div>
+
+
 <main id="main" class="index-main">
+
     <section data-section="highlight" class="h-flex">
-        <div class="sc-billboard sc-grid-row bg-black c-white fade">
+        <div class="sc-billboard sc-grid-row bg-gray-linear c-white">
             <div class="sc-cover overflow-hidden">
                 <div class="swiper default fade autoplay loop">
                     <div class="swiper-wrapper">
 
-                        <div class="swiper-slide">
+                        <div class="swiper-slide contain">
                             <!-- NOTE : FUNCTION GROUP(include/function-group.php) -->
                             <!-- CASE 2 : (D)VIDEO (M)VIDEO -->
-                            <figure class="object-fit">
-                                <video playsinline autoplay muted loop src="" class="vdojs" data-vdo-src="./assets/vdo/neo.mp4" data-vdo-srcset="" poster=""></video>
-                            </figure>
+                            <div class="wrapper">
+                                <figure class="object-fit">
+                                    <video playsinline autoplay muted loop src="" class="vdojs" data-vdo-src="./assets/vdo/neo.mp4" data-vdo-srcset="" poster=""></video>
+                                </figure>
+                            </div>
                         </div>
 
                     </div>
