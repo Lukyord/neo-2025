@@ -3391,6 +3391,11 @@ background-size: cover, var(--ci-background) auto; */
     pointer-events: none;
 }
 
+#main.blog-single:before {
+    position: absolute;
+    top: 0;
+}
+
 #main.error-main:before {
     top: 0;
 }

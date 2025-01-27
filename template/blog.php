@@ -2,11 +2,10 @@
 
 <?php include($root . "header.php"); ?>
 <main id="main">
-
     <section class="sc-news">
         <div class="sc-inner padding-bottom-0">
             <div class="sc-container a-center">
-                <h1 class="news-heading size-h1 weight-medium c-theme">ข่าวสารล่าสุด</h1>
+                <h1 class="news-heading size-h1 weight-medium c-theme">บทความสาระน่ารู้</h1>
                 <div class="swiper auto news-swiper insufficient centered centered-m loop">
                     <div class="swiper-wrapper">
                         <?php
@@ -16,42 +15,42 @@
                                 'date' => "3 October 2024",
                                 "title" => "กลุ่มบริษัท นีโอ จัดกิจกรรม “Community Go Green”",
                                 "short_description" => "มุ่งสร้างวิถีสังคมคาร์บอนต่ำ เพื่อการพัฒนา อย่างมั่นคงและยั่งยืน",
-                                "link" => $root . "news-single.php",
+                                "link" => $root . "blog-single.php",
                             ),
                             array(
                                 'main_image' => "./assets/img/design/news-main-image2.png",
                                 'date' => "3 October 2024",
                                 "title" => "นีโอ แฟคทอรี่ ลงนามข้อตกลง ความร่วมมือ ร่วมกับ ม.นเรศวร",
                                 "short_description" => "มุ่งพัฒนาผลิตภัณฑ์คุณภาพ เพื่อยกระดับ ความสุขแก่ผู้บริโภคคนไทย มุ่งพัฒนาผลิตภัณฑ์คุณภาพ เพื่อยกระดับ ความสุขแก่ผู้บริโภคคนไทย มุ่งพัฒนาผลิตภัณฑ์คุณภาพ เพื่อยกระดับ ความสุขแก่ผู้บริโภคคนไทย",
-                                "link" => $root . "news-single.php",
+                                "link" => $root . "blog-single.php",
                             ),
                             array(
                                 'main_image' => "./assets/img/design/news-main-image3.png",
                                 'date' => "3 October 2024",
                                 "title" => "รับกระแสการเปลี่ยนแปลงการดำเนินธุรกิจในโลกใหม่ ณิศรา ถกลศรี",
                                 "short_description" => "รองประธานเจ้าหน้าที่บริหารสายปฏิบัติการ ผู้บริหารไฟแรงแห่ง นีโอ คอร์ปอเรท",
-                                "link" => $root . "news-single.php",
+                                "link" => $root . "blog-single.php",
                             ),
                             array(
                                 'main_image' => "./assets/img/design/news-main-image1.png",
                                 'date' => "3 October 2024",
                                 "title" => "กลุ่มบริษัท นีโอ จัดกิจกรรม “Community Go Green”",
                                 "short_description" => "มุ่งสร้างวิถีสังคมคาร์บอนต่ำ เพื่อการพัฒนา อย่างมั่นคงและยั่งยืน",
-                                "link" => $root . "news-single.php",
+                                "link" => $root . "blog-single.php",
                             ),
                             array(
                                 'main_image' => "./assets/img/design/news-main-image2.png",
                                 'date' => "3 October 2024",
                                 "title" => "นีโอ แฟคทอรี่ ลงนามข้อตกลง ความร่วมมือ ร่วมกับ ม.นเรศวร",
                                 "short_description" => "มุ่งพัฒนาผลิตภัณฑ์คุณภาพ เพื่อยกระดับ ความสุขแก่ผู้บริโภคคนไทย",
-                                "link" => $root . "news-single.php",
+                                "link" => $root . "blog-single.php",
                             ),
                             array(
                                 'main_image' => "./assets/img/design/news-main-image3.png",
                                 'date' => "3 October 2024",
                                 "title" => "รับกระแสการเปลี่ยนแปลงการดำเนินธุรกิจในโลกใหม่ ณิศรา ถกลศรี",
                                 "short_description" => "รองประธานเจ้าหน้าที่บริหารสายปฏิบัติการ ผู้บริหารไฟแรงแห่ง นีโอ คอร์ปอเรท",
-                                "link" => $root . "news-single.php",
+                                "link" => $root . "blog-single.php",
                             ),
                         );
                         foreach ($news_arr as $news) {

@@ -5,6 +5,13 @@
             <img class="product-shot" src="<?php echo $product['image-packshot'] ?>" alt="product-shot">
         </div>
         <h2 class="weight-medium c-theme"><?php echo $product['title'] ?></h2>
-        <a class="explore" href="./brand-single.php"><span class="polygon"><span class="arrow"></span></span>ช้อปเลย</a>
+        <a
+            class="explore"
+            href="<?php if (isset($product["outer-link"])) {
+                        echo $product["outer-link"];
+                    } else {
+                        echo "./brand-single.php";
+                    } ?>">
+            <span class="polygon"><span class="arrow"></span></span>ช้อปเลย</a>
     </div>
 </div>

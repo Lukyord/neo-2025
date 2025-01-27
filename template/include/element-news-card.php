@@ -1,5 +1,5 @@
 <div class="swiper-slide news">
-    <a class="news-card" href="./news-single.php">
+    <a class="news-card" href="<?php echo $news['link'] ?>">
         <div class="news-image-wrapper">
             <img src="<?php echo $news['main_image'] ?>" alt="news main image" class="news-main-image">
         </div>

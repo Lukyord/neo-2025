@@ -91,10 +91,11 @@
         background-position: left bottom;
         position: absolute;
         z-index: -1;
-        bottom: 0;
+        bottom: calc(var(--ci-background) * -1 * 0.1);
         left: 0;
         pointer-events: none;
     }
+
     .sc-columns {
         --cover-width: 41.2068965517%;
         --content-width: 50%;
@@ -466,6 +467,10 @@
     .sc-news-single .sc-inner {
         height: calc(100svh - var(--header-height) - var(--footer-height));
     }
+    .sc-news-single.blog-single .sc-inner {
+        height: calc(80svh - var(--header-height) - var(--footer-height));
+    }
+
     .sc-news-single .sc-inner .news-single {
         width: 100vw;
         height: 100%;
@@ -506,6 +511,15 @@
         padding-bottom: var(--spacing-xl);
         margin-bottom: var(--footer-height);
     }
+
+    .sc-news-single
+        .sc-inner
+        .news-single
+        .news-content
+        .entry-content-wrapper::after {
+        content: none;
+    }
+
     .sc-news-single .sc-inner .news-single .news-content .next-button,
     .sc-news-single .sc-inner .news-single .news-content .prev-button {
         display: block;
@@ -564,10 +578,10 @@
         display: none;
     }
     .sc-news-single .sc-inner .news-single .news-button-footer {
-        position: fixed;
-        bottom: var(--footer-height);
-        left: 5vw;
-        width: 90vw;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100vw;
         gap: 0;
     }
     .sc-news-single .sc-inner .news-single .news-button-footer .white-gradient {
@@ -582,10 +596,26 @@
     }
     .sc-news-single .sc-inner .news-single .news-button-footer .buttons {
         background-color: white;
+        padding: 0 2.5vw;
         padding-top: var(--spacing-container);
-        border-top: 1px solid rgba(0, 0, 0, 0.26);
         width: 100%;
+        position: relative;
     }
+
+    .sc-news-single
+        .sc-inner
+        .news-single
+        .news-button-footer
+        .buttons::before {
+        content: "";
+        position: absolute;
+        width: calc(100% - 5vw);
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+        border-top: 1px solid rgba(0, 0, 0, 0.26);
+    }
+
     .contact .next-button {
         right: 2.5%;
         top: 26vw;
