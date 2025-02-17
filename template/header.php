@@ -92,6 +92,7 @@ $page_index = ($page == basename(dirname($_SERVER['PHP_SELF']), "/") || $page ==
                                                 <li><a href="<?php echo $root; ?>brand.php">แบรนด์</a></li>
                                                 <li><a href="<?php echo $root; ?>new-products.php">ผลิตภัณฑ์ล่าสุด</a></li>
                                                 <li><a href="<?php echo $root; ?>" target="_blank">การพัฒนาอย่างยั่งยืน</a></li>
+                                                <li><a href="<?php echo $root; ?>esg.php" target="_blank">อีเอสจี</a></li>
                                                 <li><a href="<?php echo $root; ?>" target="_blank">นักลงทุนสัมพันธ์</a></li>
                                                 <li><a href="<?php echo $root; ?>news.php">ข่าวสารล่าสุด</a></li>
                                                 <li><a href="<?php echo $root; ?>career.php">ร่วมงานกับเรา</a></li>
